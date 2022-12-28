@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ProductCard from "../../components/ProductCard";
 import { toggleBrand, toggleStock } from "../../redux/actions/filterActions";
-import fetchProductData from "../../redux/thunk/products/fetchProducts";
+import loadProductData from "../../redux/thunk/products/fetchProducts";
 
 const Home = () => {
   const products = useSelector(state => state.product.products);
@@ -11,7 +11,7 @@ const Home = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchProductData());
+    dispatch(loadProductData());
   }, [dispatch]);
 
   const activeClass = "text-white  bg-indigo-500 border-white";
