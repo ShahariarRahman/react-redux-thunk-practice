@@ -1,4 +1,4 @@
-import { loadProduct } from "../../actions/productAction";
+import { loadProduct } from "../../actions/productActions";
 
 const fetchProductData = () => {
     return async (dispatch, getState) => {
