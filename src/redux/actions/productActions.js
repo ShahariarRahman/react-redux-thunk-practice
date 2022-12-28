@@ -12,11 +12,9 @@ export const loadProduct = (products) => {
   };
 };
 
-
 export const addProduct = (product) => {
   return {
-    type: ADD_PRODUCT,
-    payload: product,
+    type: ADD_PRODUCT, payload: product,
   };
 };
 
