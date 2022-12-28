@@ -2,7 +2,7 @@ import { removeProduct } from "../../actions/productActions";
 
 const deleteProduct = (id) => {
     return async (dispatch, getState) => {
-        const res = await fetch(`http://localhost:5000/product/${id}`, {
+        const res = await fetch(`https://moontech-api.onrender.com/product/${id}`, {
             method: 'DELETE',
         });
         const data = await res.json();

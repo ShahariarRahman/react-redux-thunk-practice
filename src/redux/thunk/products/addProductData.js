@@ -2,7 +2,7 @@ import { addProduct } from "../../actions/productActions";
 
 const addProductData = (product) => {
     return async (dispatch, getState) => {
-        const res = await fetch("http://localhost:5000/product", {
+        const res = await fetch("https://moontech-api.onrender.com/product", {
             method: 'POST',
             headers: {
                 "content-type": "application/json",
