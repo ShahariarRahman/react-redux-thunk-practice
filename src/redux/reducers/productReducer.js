@@ -2,7 +2,6 @@ import {
   ADD_PRODUCT,
   ADD_TO_CART,
   LOAD_PRODUCT,
-  PRODUCT_LOADED,
   REMOVE_FROM_CART,
   REMOVE_PRODUCT,
 } from "../actionTypes/actionTypes";
@@ -70,14 +69,9 @@ const productReducer = (state = initialState, action) => {
         ),
       };
 
-    case PRODUCT_LOADED:
-      return {
-        ...state,
-        products: action.payload,
-      };
     default:
       return state;
-  }
+  };
 };
 
 export default productReducer;

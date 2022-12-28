@@ -2,7 +2,6 @@ import {
   ADD_PRODUCT,
   ADD_TO_CART,
   LOAD_PRODUCT,
-  PRODUCT_LOADED,
   REMOVE_FROM_CART,
   REMOVE_PRODUCT,
 } from "../actionTypes/actionTypes";
@@ -42,9 +41,3 @@ export const removeFromCart = (product) => {
   };
 };
 
-export const loaded = (products) => {
-  return {
-    type: PRODUCT_LOADED,
-    payload: products,
-  };
-};
